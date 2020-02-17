@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+	<link rel="icon" href=""></link>
+	<meta charset = "UTF-8"></meta>
+</head>
+<body>
+	<form method="POST">
+		<label>First Name</label><br>
+		<input type="text" name = "fname" autofocus>
+		
+		<br><br>
+		<label>Last Name</label><br>
+		<input type="text" name = "lname" required>
+		
+		<br><br>
+		<input type="radio" name="gender" value="male" checked>Male<br>
+		<input type="radio" name="gender" value="male">Female<br>
+		
+		<br><br>
+		<input type="submit" value="insert">
+	</form>
+	
+	
+	<h1>Second Form..</h1>
+	<form target="_self">
+		<fieldset>
+				<legend>Personal Information</legend>
+			Fname<br>
+				<input type="text" name="fname"><br><br>
+			Lname<br>
+				<input type="text" name = "lname" required><br><br>
+				<input type="radio" name="gender" value="male" checked>Male<br>
+				<input type="radio" name="gender" value="male">Female<br><br>
+				
+			Hobbies<br>
+				<input type="checkbox" name="hobby" value="cric">Cricket
+				<input type="checkbox" name="hobby" value="sw">Swimming
+				<input type="checkbox" name="hobby" value="run">Running<br><br>
+				
+			password<br>
+				<input type="password" name="pwd"><br><br>
+				
+			Select Your Car : 
+				<select name="cars" size="1" >
+					<option value="c1">Car1</option>
+					<option value="c2">Car2</option>
+					<option>Car3</option>
+					<option>Car4</option>
+				</select><br><br><br>
+				
+			<textarea name="adr" rows="5" cols="20"></textarea><br><br>
+				
+			Select Color :
+				<input type="color"><br><br>
+				
+			Birth Date : 
+				<input type="date"><br><br>
+				
+			Enter a date before 1980-01-01 : 
+				<input type="date" name="bday" max="1979-12-31"><br><br>
+				
+			Quantity :
+				<input type="number" name="points" min="0" max="100" step="10" value="30"><br><br>
+				
+			Email : <input type="email" required multiple><br><br>
+			
+			<label>Your Car Names</label>
+				<input list="cars" id="carsInput">
+				<datalist id = "cars">
+					<option value="BMW">
+					<option value="Bently">
+					<option value="Audi">
+					<option value="Mercedes">
+					<option value="Volkswagen">
+				</datalist><br><br>
+				
+				<input type="submit" value="Insert"><br><br>
+				<input type="reset" value="Reset!!"><br><br>
+				<button type="button">Click Me</button>
+				
+				<br><br>
+				<img src ="C:\Users\admin\Desktop\img2.png" height="100px" width="100px">
+		</fieldset>
+	</form>
+	
+</body>
+
+</html>
