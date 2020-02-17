@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Show items</title>
+</head>
+<body>
+	<p>click button to demonstrate prompt box</p>
+	<button onclick="myFunction1()">Click here..</button>
+	
+	<p id="demo"></p>
+	<br><br>
+	<p>click button to demonstrate confirm box</p>
+	<button onclick="myFunction2()">Try it..</button>
+	
+	<script>
+		function myFunction1(){
+			var x;
+			var person = prompt("Please enter your name","Harry Potter");
+			
+			if(person!=null){
+				x = "Hello " + person + "...How are you today?";
+				document.getElementById("demo").innerHTML=x;
+			}
+		}
+		function myFunction2(){
+			var y;
+			var r = confirm("Press a button");
+			if(r == true)
+			{
+				x="You pressed OK";
+			}
+			else
+			{
+				x="You pressed cancelled";
+			}
+		document.getElementById("demo").innerHTML=x;
+		}
+	</script>
+</body>
+</html>

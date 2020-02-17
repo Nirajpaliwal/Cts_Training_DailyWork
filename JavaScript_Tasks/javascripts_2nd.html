@@ -1,0 +1,39 @@
+<html>
+<head>
+
+</head>
+
+<body>
+
+	
+	
+	<h1 id="myLink"></h1>
+	
+	<h1><script>document.write(person.firstName);</script></h1>
+	<h1><script>document.write(person.lastName);</script></h1>
+	<h1><script>document.write(person.fullName());</script></h1>
+	
+	
+	<script>
+		var person = {
+			firstName : "Neeraj",
+			lastName : "Paliwal",
+			id : 5566,
+			fullName : function() {
+				return this.firstName + " " + this.lastName;
+			}
+			
+		};
+		
+		document.write(person.firstName);
+		
+		document.write(person.lastName);
+		
+		document.write(person.fullName());
+		
+		document.getElementById("myLink").innerHTML=person.firstName;
+	
+	</script>
+</body>
+
+</html>

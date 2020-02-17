@@ -1,0 +1,69 @@
+<html>
+<head>
+
+</head>
+
+<body>
+
+	<script>
+		var myGirls = ["A","B","C"];
+		var myBoys = ["P","Q","R","S"];
+		var myChildren = myGirls.concat(myBoys);
+				
+		var txt = "";
+		var numbers = [10,20,30,40,50];
+		
+		numbers.forEach(myFunc1);
+		
+		function myFunc1(value){
+			txt = txt + value + "<br>";
+		}
+		
+		
+		
+		
+		
+		
+		
+		function myFunc2(){
+			var numbers2 = [111,222,333,444,555,666];
+			var numbers3 = numbers2.map(myFunc3);
+			//var numbers3 = numbers2.filter(myFunc3);
+			//var numbers3 = numbers2.reduce(makeTotal);
+			//var numbers3 = numbers2.every(myFilterFunc);
+			//var numbers3 = numbers2.find(myFilterFunc);
+		
+			document.write(numbers3);
+		}
+		
+		function myFunc3(value){
+			return value * 2;
+		}
+		
+		function myFilterFunc(value){
+			return value  > 18;
+		}
+		
+		function makeTotal(total,value){
+			return total + value;
+		}
+		
+		
+		var ran1 = Math.floor(Math.random() * 10);
+		var ran2 = (Math.random());
+		var ran3 = Math.floor(Math.random() * 11);
+		var ran4 = Math.floor(Math.random() * 100);
+	
+ 		
+		
+	</script>
+	
+	<h3>Concatenated Array : <script>document.write(myChildren);</script></h3>
+	<h3><script>document.write(txt);</script></h3>
+	<h3>Random No : <script>document.write(ran1);</script></h3>
+	<h3>Random No : <script>document.write(ran2);</script></h3>
+	<h3>Random No : <script>document.write(ran3);</script></h3>
+	<h3>Random No : <script>document.write(ran4 );</script></h3>
+	<button onclick=myFunc2();>Click Here...</button>
+</body>
+</html>

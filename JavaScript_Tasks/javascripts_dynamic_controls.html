@@ -1,0 +1,54 @@
+<html>
+<head>
+	<style>
+		table#myTable {
+			text-align: center;
+			margin-left: 28%;
+			border: 1px solid black;
+			background-color: yellow;
+			margin-top: 50px;
+		}
+		
+		input[type="button"] {
+			margin-left: 42%;
+		}
+	</style>
+	
+	<script>
+		var x = 1;
+		
+		function insRow(){
+			var t = document.getElementById("myTable").insertRow(-1);
+			var y = t.insertCell(0);
+			var z = t.insertCell(1);
+			var p = t.insertCell(2);
+			var q = t.insertCell(3);
+			var r = t.insertCell(4);
+			y.innerHTML = x++;
+			z.innerHTML = x++;
+			p.innerHTML = x++;
+			q.innerHTML = x++;
+			r.innerHTML = x++;
+		}
+		
+		document.write("Write Something...");
+		console.log("Write Something!!!!!!!!!!")
+		alert("This is alert")
+	</script>
+</head>
+
+<body>
+	
+	<table id = "myTable" border = "1">
+		<th>Column 1</th>
+		<th>Column 2</th>
+		<th>Column 3</th>
+		<th>Column 4</th>
+		<th>Column 5</th>
+	</table>
+	
+	<br><br>
+	
+	<input type="button" onclick="insRow()" value="Insert Row...">
+</body>
+</html>
