@@ -1,0 +1,62 @@
+.container-fluid {
+    border: 2px solid red;
+}
+
+img.cts-image {
+    margin-left: 16%;
+    width: 66%;
+}
+
+.menu-items {
+    /*border: 2px solid black;*/
+    margin-top: 40px;
+    background-color: yellow;
+}
+
+
+.web-content {
+    background-color: lightgreen;
+	border: 2px solid black;
+}
+
+.top-web-content {
+    /*border: 2px dotted black;*/
+	background-color: bisque;
+	height: 300px;
+}
+
+.bottom-web-content {
+    /*border: 2px dotted red;*/
+    margin-top: 4px;
+    background-color: #ff990024;
+}
+
+.left-bottom {
+    background-color: aqua;
+	height: 200px;
+}
+
+.right-bottom {
+    background-color: coral;
+	height: 200px;
+}
+
+.bottom-part {
+    margin-top: 100px;
+}
+
+.left-side-text{
+	margin-top:100px;
+}
+
+.right-side-text{
+	margin-top:100px;
+}
+
+.bottom-web-content-text{
+	margin-top:100px;
+}
+
+.top-web-content-text{
+	margin-top:100px;
+}

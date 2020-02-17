@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>First Projectt</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style4.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body><!-- Body Starts-->
+    <header class="col-md-12"><!-- Header Starts-->
+	  <div class="logo"><a href ="dummy_project1.html"><img src="cts_logo.png" class="logo_image"></a></div>
+	  <nav>
+	    <ul>
+	      <li><a href ="dummy_project1.html">Home</a></li>
+	      <li><a href="#">About</a></li>
+	      <li class="sub-menu"><a href="#">Services <i class="fa fa-angle-double-down"></i></a>
+	        <ul>
+	          <li><a href="#">Link 1</a></li>
+	          <li><a href="#">Link 2</a></li>
+	          <li><a href="#">Link 3</a></li>
+	          <li><a href="#">Link 4</a></li>
+	        </ul>
+	      </li>
+	      <li><a href="#">Team</a></li>
+	      <li class="sub-menu"><a href="#"><a href="#">Portfolio <i class="fa fa-angle-double-down"></i></a></a>
+	        <ul>
+	          <li><a href="#">Link 1</a></li>
+	          <li><a href="#">Link 2</a></li>
+	          <li><a href="#">Link 3</a></li>
+	          <li><a href="#">Link 4</a></li>
+	        </ul>
+	      </li>
+	      <li><a href="#">Contact</a></li>
+	      <li><button type="button" class="btn btn-default " id="myBtn">Login</button>
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header" style="padding:35px 50px;">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+			        </div>
+			        <div class="modal-body" style="padding:40px 50px;">
+			          <form role="form">
+			            <div class="form-group">
+			              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+			              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+			            </div>
+			            <div class="form-group">
+			              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+			              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+			            </div>
+			            <div class="checkbox">
+			              <label><input type="checkbox" value="" checked>Remember me</label>
+			            </div>
+			              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+			          </form>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+			          <p>Not a member? <a href="#" class="s">Sign Up</a></p>
+			          <p>Forgot <a href="#" class="s">Password?</a></p>
+			        </div>
+			      </div>
+			    </div>
+			  </div><!-- Modal End-->
+			</li><!--li of login end -->
+
+
+	      	<li><button type="button" class="btn btn-default " id="myBtn2">Sign Up</button>
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal2" role="dialog">
+			    <div class="modal-dialog">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header" style="padding:35px 50px;">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+			        </div>
+			        <div class="modal-body" style="padding:40px 50px;">
+			          <form role="form">
+			          	<div class="form-group">
+			              <label for="firstname"><span class="glyphicon glyphicon-user"></span> First Name</label>
+			              <input type="text" class="form-control" id="firstname" name="first_name" placeholder="Enter Firts Name">
+			            </div>
+			            <div class="form-group">
+			              <label for="lastname"><span class="glyphicon glyphicon-user"></span> Last Name</label>
+			              <input type="text" class="form-control" id="lastname" name="last_name" placeholder="Enter Last Name">
+			            </div>
+			            <div class="form-group">
+			              <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+			              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+			            </div>
+			            <div class="form-group">
+			              <label for="mobileno"><span class="glyphicon glyphicon-phone"></span> Mobile Number</label>
+			              <input type="text" class="form-control" id="mobileno" name="mobile_no" placeholder="Enter Mobile Number">
+			            </div>
+			            <div class="form-group">
+			              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+			              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+			            </div>
+			            <div class="checkbox">
+			              <label><input type="checkbox" value="" checked>Remember me</label>
+			            </div>
+			              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign Up</button>
+			          </form>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+			          <p>Already a member? <a href="#" class="s">Login</a></p>
+			        </div>
+			      </div>
+			    </div>
+			  </div><!-- Modal End-->
+			</li><!--li of sign up end -->
+	    </ul>
+	  </nav>
+	  <div class="menu-toggle">
+	    <a href="https://www.jqueryscript.net/menu/">Menu</a> Toggler Here
+	  </div>
+	</header><!-- Header Ends-->
+
+	<div class="row slider-start">
+		<!-- Slider strat -->
+		<div id="myCarousel" class="carousel slide slider" data-ride="carousel"> 
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="item active"> <img src="photo2.jfif" style="width:100%" class="slider-image" alt="First slide">
+		      <div class="container">
+		        <div class="carousel-caption">
+		        </div>
+		      </div>
+		    </div>
+		    <div class="item"> <img src="photo3.jfif" style="width:100%" data-src="" class="slider-image" alt="Second slide">
+		      <div class="container">
+		        <div class="carousel-caption">
+		        </div>
+		      </div>
+		    </div>
+		    <div class="item"> <img src="photo4.jfif" style="width:100%" class="slider-image" data-src="" alt="Third slide">
+		      <div class="container">
+		        <div class="carousel-caption">
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div><!-- Slider End -->
+	</div>
+
+	<div class="row"><!-- Text Div Start -->
+		<div class="container">
+		  <div id="accordion">
+			  <ul class="panels">
+			    <li data-panel-id="panel1">Header 1</li>
+			    <div class="panel panel1"> <a href="#">Panel 1</a>
+			      <p>This is the content for panel 1</p>
+			    </div>
+			    <li data-panel-id="panel2">Header 2</li>
+			    <div class="panel panel2"> <a href="#">Panel 2</a>
+			      <p>This is the content for panel 2</p>
+			    </div>
+			    <li data-panel-id="panel3">Header 3</li>
+			    <div class="panel panel3"> <a href="#">Panel 3</a>
+			      <p>This is the content for panel 3</p>
+			    </div>
+			    <li data-panel-id="panel4">Header 4</li>
+			    <div class="panel panel4"> <a href="#">Panel 4</a>
+			      <p>This is the content for panel 4</p>
+			    </div>
+			  </ul>
+			</div>
+		</div>
+	</div><!-- Text Div End -->
+
+
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+   <script type = "text/javascript" src ="js/scripts.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    	//script for navbar
+    	$(document).ready(function(){
+		  $('.menu-toggle').click(function(){
+		    $('nav').toggleClass('active');
+		  });
+
+		  $('ul li').click(function(){
+		    $(this).siblings().removeClass('active');
+		    $(this).toggleClass('active');
+		  })
+		})
+
+
+		// script for login form
+		$(document).ready(function(){
+		  $("#myBtn").click(function(){
+		    $("#myModal").modal();
+		  });
+		});
+
+		// script for login form
+		$(document).ready(function(){
+		  $("#myBtn2").click(function(){
+		    $("#myModal2").modal();
+		  });
+		});
+
+		// slider script
+		(function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+    </script>
+  </body>
+</html>
