@@ -26,8 +26,8 @@ public class NameList {
 		return true;
 	}
 	
-	public boolean getName() {
-		return true;
+	public String getName(int index) {
+		return name.get(index);
 	}
 	
 	public ArrayList<String> getAllName() {
@@ -58,7 +58,7 @@ public class NameList {
 		
 		switch(choice) {
 		case 1:
-			System.out.println("Enter new name");
+			System.out.println("Enter new name : ");
 			String new_name_to_add = sc.nextLine();
 			list.addName(new_name_to_add);	
 			break;
@@ -75,10 +75,15 @@ public class NameList {
 			String new_name = sc.nextLine();
 			
 			list.updateName(old_name,new_name);
+			break;
 		case 4:
-			System.out.println(list.getName());
+			System.out.println("Enter index to get name : ");
+			int index = sc.nextInt();
+			System.out.println(list.getName(index));
+			break;
 		case 5:
 			System.out.println(list.getAllName());
+			break;
 			
 			
 		}
