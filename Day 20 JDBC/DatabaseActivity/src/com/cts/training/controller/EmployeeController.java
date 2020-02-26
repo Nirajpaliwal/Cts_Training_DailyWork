@@ -86,7 +86,8 @@ public class EmployeeController {
 			case 3:
 				System.out.println("\n\nEnter employee id to delete employee data : ");
 				emp_id2 = sc.nextInt();
-				employeeDAO.deleteEmployee(emp_id2);
+				Employee emp1 = employeeDAO.getEmployeeById(emp_id2);
+				employeeDAO.deleteEmployee(emp1);
 				break;
 			case 4:
 				System.out.println("\n\nEnter employee id to get data : ");

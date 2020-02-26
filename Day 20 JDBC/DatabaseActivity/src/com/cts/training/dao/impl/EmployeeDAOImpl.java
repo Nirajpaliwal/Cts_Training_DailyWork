@@ -147,14 +147,13 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	}
 
 	@Override
-	public boolean deleteEmployee(int emp_id2) {
-		List<Employee> employees = new ArrayList<Employee>();
+	public boolean deleteEmployee(Employee employee) {
 		String delete_query = "delete from employee_details where id = ?";
 		try {
 			ps1 = conn.prepareStatement(delete_query);
-
+			ps1.setInt(1, employee.getId());
 			int delete_result = ps1.executeUpdate();
-			ps3.setInt(1, emp_id2);
+			
 			if (delete_result > 0) {
 				System.out.println("Data deleted succesfully");
 			} else {
