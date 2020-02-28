@@ -11,7 +11,7 @@
 			var nmmsg2 = "Please enter alphabets only";
 			var mobmsg1 = "Enter proper mobile number";
 			var mobmsg2 = "Enter only numeric for mobile";
-			var emailmsg = "Please Enter valid email address"
+			var emailmsg = "Please Enter valid email address";
 
 
 			// var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -47,8 +47,8 @@
 			}
 		}
 	
-		function removemsg(ctid){
-			document.getElementById(ctid).innerHTML = "";
+		function removemsg(tag_id){
+			document.getElementById(tag_id).innerHTML = "";
 		}
 	</script>
 </head>
@@ -56,17 +56,17 @@
 
 <body>
 	<form name = "my" method="post" onsubmit="return validateForm()">
-	Name:<input type="text" name="nm" onfocus="removemsg('ernm')">
-	<span id="ernm" style="color:red"></span><br><br>
+		Name:<input type="text" name="nm" onfocus="removemsg('ernm')">
+		<span id="ernm" style="color:red"></span><br><br>
 
-	Mobile:<input type="text" name="mob" onfocus="removemsg('ermob')">
-	<span id="ermob" style="color:red"></span><br><br>
+		Mobile:<input type="text" name="mob" onfocus="removemsg('ermob')">
+		<span id="ermob" style="color:red"></span><br><br>
 
-	email:<input type="text" name="email" onfocus="removemsg('eremail')">
-	<span id="eremail" style="color:red"></span><br><br>
-	
-	<!-- Pincode:<input type="text" name="pin"><br> -->
-	<input type="submit"value="save data"><br>
+		email:<input type="text" name="email" onfocus="removemsg('eremail')">
+		<span id="eremail" style="color:red"></span><br><br>
+		
+		<!-- Pincode:<input type="text" name="pin"><br> -->
+		<input type="submit"value="save data"><br>
 	</form>
 
 </body>
