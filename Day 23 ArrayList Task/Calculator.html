@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+      h1.heading {
+          text-align: center;
+          font-family: monospace;
+      }
+      .row{
+        background-color: yellow;
+      }
+      .container-fluid {
+        width: 40%;
+        background-color: yellow;
+      }
+
+      button.btn.btn-primary.operator {
+          margin: 2px;
+      }
+
+      button.btn.btn-primary.digit {
+          margin: 2px;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function calculateTotal(){
+        var first_number = document.myForm.get.value;
+        var second_number = document.myForm.get.value;
+        var operator = document.myForm.operator.value;
+        console.log(first_number);
+        //console.log(second_number);
+        //console.log(operator);
+
+        if(operator == '+'){
+         var result = first_number + second_number;
+          document.getElementById('output').innerHTML = result;
+          //console.log(result);
+        }
+
+        if(operator == '-'){
+         var result = first_number - second_number;
+          document.getElementById('output').innerHTML = result;
+        }
+
+        if(operator == '*'){
+         var result = first_number * second_number;
+          document.getElementById('output').innerHTML = result;
+        }
+
+        if(operator == '/'){
+         var result = first_number / second_number;
+          document.getElementById('output').innerHTML = result;
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <h1 class="heading">Calculator</h1>
+
+    <div class="container-fluid">
+      <form onsubmit="return calculateTotal()" method="get" name="myForm">  
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 digit">
+              <div class="col-md-2 "><button class="btn btn-primary digit" onclick="calculateTotal();" id="get">1</button></div>
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get">2</button></div>
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get">3</button></div>
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-3 "><button class="btn btn-primary operator" name="getoperator">+</button></div>
+              <div class="col-md-3 "><button class="btn btn-primary operator" name="getoperator">-</button></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get">4</button></div>
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get">5</button></div>
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get">6</button></div>
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-3 "><button class="btn btn-primary operator" name="getoperator">*</button></div>
+              <div class="col-md-3 "><button class="btn btn-primary operator" name="getoperator">/</button></div>
+            </div>
+          </div>
+
+         <div class="row">
+            <div class="col-md-6">
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get">7</button></div>
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get8">8</button></div>
+              <div class="col-md-2 "><button class="btn btn-primary digit" name="get">9</button></div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-3 "><input type="submit" value="submit" class="btn btn-primary operator"></div>
+            </div>
+          </div>
+      </form>  
+      <div class="col-md-3 "><input type="submit" value="submit" onclick="calculateTotal();" class="btn btn-primary operalog">
+     
+    </div>
+    
+    <h1 id="output"></h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
