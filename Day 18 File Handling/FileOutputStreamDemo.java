@@ -9,6 +9,7 @@ public class FileOutputStreamDemo {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		String path = "C:\\Users\\admin\\eclipse-workspace\\Test\\src\\com\\cognizant\\training\\filehandling\\day18\\sample2.txt";
 
+		// true is used to append data to file otherwise old data will be lost
 		FileOutputStream out = new FileOutputStream(path, true);
 
 		String message = ", one more time appended";
