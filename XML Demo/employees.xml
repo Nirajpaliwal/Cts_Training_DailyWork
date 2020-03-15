@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employee.dtd">
+<employees>
+	<employee id="101" lang="Java">
+		<name>Karan</name>
+		<salary>22000</salary>
+		<!-- <designation></designation> -->
+	</employee>
+
+	<employee id="102" lang ="Java">
+		<name>Arjun</name>
+		<salary>23000</salary>
+	</employee>
+
+
+</employees>
+
+
+<!-- <!ATTLIST employee lang (Java|PHP|Python|C++) "Java"> -->

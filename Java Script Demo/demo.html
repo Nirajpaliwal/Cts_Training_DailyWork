@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title id="title">Demo Page</title>
+<script type="text/javascript">
+	var y = function func1() {
+		console.log("Hello");
+		var i = 90;
+		test2(i);
+	}
+
+	y();
+	//test2();
+	function test2(i) {
+		console.log("Hello test2");
+		console.log(i);
+	}
+	
+	function changeTitle() {
+		document.getElementById("title").innerHTML = "Changed";
+	}
+</script>
+
+
+
+</head>
+<body>
+	<h1>Hello</h1>
+	<button onclick="changeTitle()">Click to change Titile</button>
+</body>
+</html>

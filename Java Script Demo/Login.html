@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login from for JS Example</title>
+</head>
+<body>
+	<form action="" name="loginForm" method="get"
+		onsubmit="return validate()">
+		<input type="text" id="name" name="userName"
+			placeholder="Enter user name" /><br /> <input type="password"
+			id="pass" name="password" placeholder="Enter password " /><br /> <input
+			type="submit" value="submit form">
+	</form>
+
+	<script type="text/javascript">
+		for(var i = 1; i<=10; i++){
+			console.log(i);	
+		}
+	
+		function sayHello() {
+			document.write("<h1>Hello</h1>");
+
+		}
+
+		function validate() {
+			var name = document.loginForm.name.value.trim();
+			var password = document.loginForm.pass.value.trim();
+
+			if (name == "") {
+				alert("Name should not be empty");
+				return false;
+			} else if (password == "") {
+				alert("Passwrd should not be empty");
+				return false;
+			} else {
+				sayHello();
+			}
+		}
+	</script>
+
+</body>
+</html>
